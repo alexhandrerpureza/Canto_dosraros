@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canto dos Raros</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> <!--Link importado da web para direcionar o CSS do bootstrap-->
+
+
+    <link rel="stylesheet" href="./css/alexhandre_rickhelmer_batalha_pureza.css">
+
+</head>
+<body class="bodyestilo">
+
+  <nav class="navbar navbar-dark navcores fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center flex-column flex-md-row" href="#">
+        <div class="col-auto">
+          <img src="./img/logo.jpg" alt="logo" class="logo me-md-2"> <!-- Logo com margem direita apenas em telas médias e maiores -->
+        </div>
+  
+        
+        <div class="col-12 col-md text-center text-md-start"> <!-- Alinhamento centralizado em telas pequenas, à esquerda em telas maiores -->
+          <h1 class="mb-0">Canto dos Raros</h1>
+          <h4 class="mb-0">A maior plataforma de troca de livros do Brasil</h4>
+        </div>
+      </a>
+  
+       
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Canto dos Raros</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Catálago</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pg/alta.html">Em alta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pg/troca.html">Fazer troca</a>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Livros na estante" aria-label="Search">
+            <button class="btn btn-procurar" type="submit">Procurar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+        
+  <header class="cabeca">
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/lord.jpg" class="d-block w-100" alt="O Senhor dos Anéis">
+          <div class="carousel-caption d-block">
+            <h5>O Senhor dos Anéis</h5>
+            <p>Venha embarcar em uma jornada única, onde a coragem de poucos desafia o poder sombrio que ameaça destruir tudo. Em O Senhor dos Anéis, você será levado por um mundo mágico, repleto de heróis improváveis, lutas épicas e paisagens deslumbrantes.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/harrypot.jpg" class="d-block w-100" alt="Harry Potter">
+          <div class="carousel-caption d-block">
+            <h5>Harry Potter</h5>
+            <p>Em Harry Potter, cada mistério, duelo e descoberta revelam um universo cheio de encantamento e perigos à espreita. Prepare-se para uma aventura que transformará seu olhar sobre coragem, lealdade e a própria essência do heroísmo.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/alicew.jpg" class="d-block w-100" alt="Alice no País das Maravilhas">
+          <div class="carousel-caption d-block">
+            <h5>Alice no País das Maravilhas</h5>
+            <p>Entre em um mundo onde o impossível se torna realidade e a lógica é apenas uma sugestão! Em Alice no País das Maravilhas, cada passo a leva mais fundo em uma terra de fantasia extravagante, onde criaturas peculiares e enigmas encantadores aguardam.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/abelaeafera.jpg" class="d-block w-100" alt="A Bela e a Fera">
+          <div class="carousel-caption d-block">
+            <h5>A Bela e a Fera</h5>
+            <p>Entre no conto encantado onde o amor e a coragem transformam até mesmo os corações mais sombrios. A Bela e a Fera convida você para uma história de beleza interior e magia inesquecível.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+  
+  <main>
+    <div class="catalago">
+      <h3>CATÁLOGO</h3>
+    </div>
+  
+    <div class="capas row">
+      <!-- Livro 1 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img src="./img/capa1.jpg" class="card-img-top" alt="Branca de Neve">
+          <div class="card-body">
+            <h5 class="card-title">Branca de Neve</h5>
+            <p class="card-text">Prepare-se para uma aventura mágica onde o amor, a coragem e a bondade triunfam sobre a inveja e a escuridão...</p>
+            <a href="#" class="btn btn-primary">Adquirir</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Livro 2 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img src="./img/capa2.jpg" class="card-img-top" alt="Jardim Secreto">
+          <div class="card-body">
+            <h5 class="card-title">Jardim Secreto</h5>
+            <p class="card-text">Em Jardim Secreto, você será levado para um refúgio de beleza e mistério, onde cada planta e cada flor guarda um segredo...</p>
+            <a href="#" class="btn btn-primary">Adquirir</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Livro 3 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img src="./img/capa3.jpg" class="card-img-top" alt="Asas de Fogo">
+          <div class="card-body">
+            <h5 class="card-title">Asas de Fogo</h5>
+            <p class="card-text">Asas de Fogo é uma aventura fascinante onde reinos se enfrentam e dragões alçam voo...</p>
+            <a href="#" class="btn btn-primary">Adquirir</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Livro 4 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img src="./img/capa4.jpg" class="card-img-top" alt="Jane Eyre">
+          <div class="card-body">
+            <h5 class="card-title">Jane Eyre</h5>
+            <p class="card-text">Conheça Jane Eyre, uma jovem mulher de espírito forte que desafia as convenções...</p>
+            <a href="#" class="btn btn-primary">Adquirir</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Livro 5 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img src="./img/capa5.jpg" class="card-img-top" alt="O Príncipe Sapo">
+          <div class="card-body">
+            <h5 class="card-title">O Príncipe Sapo</h5>
+            <p class="card-text">Em O Príncipe Sapo, um simples beijo quebra feitiços e revela que o verdadeiro amor é capaz de transcender aparências...</p>
+            <a href="#" class="btn btn-primary">Adquirir</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Livro 6 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img src="./img/capa6.jpg" class="card-img-top" alt="Encontrado">
+          <div class="card-body">
+            <h5 class="card-title">Encontrado</h5>
+            <p class="card-text">No mundo de Encontrado, o destino tem uma maneira peculiar de nos guiar para onde precisamos estar...</p>
+            <a href="#" class="btn btn-primary">Adquirir</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Livro 7 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img src="./img/capa7.jpg" class="card-img-top" alt="O Antídoto">
+          <div class="card-body">
+            <h5 class="card-title">O Antídoto</h5>
+            <p class="card-text">O Antídoto leva você a uma corrida contra o tempo, onde a cura é uma questão de sobrevivência...</p>
+            <a href="#" class="btn btn-primary">Adquirir</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Livro 8 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img src="./img/capa8.jpg" class="card-img-top" alt="Uma Balada de Ódio e Esperança">
+          <div class="card-body">
+            <h5 class="card-title">Uma Balada de Ódio e Esperança</h5>
+            <p class="card-text">Uma Balada de Ódio e Esperança explora o poder do perdão e do sacrifício em tempos de guerra e divisão...</p>
+            <a href="#" class="btn btn-primary">Adquirir</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Livro 9 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img src="./img/capa9.jpg" class="card-img-top" alt="Romeu e Julieta">
+          <div class="card-body">
+            <h5 class="card-title">Romeu e Julieta</h5>
+            <p class="card-text">Em Romeu e Julieta, Shakespeare nos presenteia com uma história de amor arrebatador, beleza poética e tragédia...</p>
+            <a href="#" class="btn btn-primary">Adquirir</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Livro 10 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img src="./img/capa10.jpg" class="card-img-top" alt="Alladin">
+          <div class="card-body">
+            <h5 class="card-title">Alladin</h5>
+            <p class="card-text">Em Aladdin, prepare-se para uma aventura repleta de mistério, coragem e encantamento...</p>
+            <a href="#" class="btn btn-primary">Adquirir</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Livro 11 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img src="./img/capa11.jpg" class="card-img-top" alt="Coração Valente">
+          <div class="card-body">
+            <h5 class="card-title">Coração Valente</h5>
+            <p class="card-text">Coração Valente é um hino à bravura e à lealdade. Nessa aventura épica, você será levado a um mundo onde heróis nascem em batalhas...</p>
+            <a href="#" class="btn btn-primary">Adquirir</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Livro 12 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img src="./img/capa12.jpg" class="card-img-top" alt="Ilha Sangrenta">
+          <div class="card-body">
+            <h5 class="card-title">Ilha Sangrenta</h5>
+            <p class="card-text">Em Ilha Sangrenta, cada passo esconde um perigo e cada sombra guarda um segredo...</p>
+            <a href="#" class="btn btn-primary">Adquirir</a>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </main>
+  
+
+  <footer class="footer text-center text-sm-start py-4">
+    <div class="container">
+        <h5 class="mb-3"><strong>Canto dos Raros</strong></h5>
+        <p>Telefone: (11) 9999-8888</p>
+        <p>Endereço: Rua dos Livros, 123 - São Paulo, SP</p>
+        
+        <div class="social-icons mt-3 d-flex justify-content-center flex-wrap">
+            <a href="#" class="mx-2"><i>Facebook:</i> Canto_dos_raros</a>
+            <a href="#" class="mx-2"><i>Instagram:</i> CantodosRarosOficial</a>
+            <a href="#" class="mx-2"><i>X:</i> Canto_dos_Raros</a>
+        </div>
+    </div>
+</footer>
+ 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> <!--Link importado da web para direcionar o JS do bootstrap-->
+
+</body>
+</html>

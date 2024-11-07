@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canto dos Raros</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> <!--Link importado da web para direcionar o CSS do bootstrap-->
+
+
+    <link rel="stylesheet" href="../css/alexhandre_rickhelmer_batalha_pureza.css">
+
+</head>
+<body class="bodyestilo">
+
+    <nav class="navbar navbar-dark navcores fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center flex-column flex-md-row" href="../index.html">
+        
+            <div class="col-auto">
+              <img src="../img/logo.jpg" alt="logo" class="logo me-md-2"> <!-- Logo com margem direita apenas em telas médias e maiores -->
+            </div>
+      
+            
+            <div class="col-12 col-md text-center text-md-start"> <!-- Alinhamento centralizado em telas pequenas, à esquerda em telas maiores -->
+              <h1 class="mb-0">Canto dos Raros</h1>
+              <h4 class="mb-0">A maior plataforma de troca de livros do Brasil</h4>
+            </div>
+          </a>
+      
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Canto dos Raros</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Catálago</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pg/alta.html">Em alta</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Fazer troca</a>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Livros na estante" aria-label="Search">
+                <button class="btn btn-procurar" type="submit">Procurar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+      <header class="cima">
+        <div>
+            <h3>FAÇA SUA TROCA</h3>
+        </div>
+    </header>
+    
+    <main class="troca">
+        <form class="row g-3">
+            <!-- Nome do Livro -->
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                <label for="bookTitle" class="form-label">Nome do Livro</label>
+                <input type="text" class="form-control" id="bookTitle" placeholder="Ex: Príncipe Rodrico Encontra um Lobo">
+            </div>
+            
+            <!-- Autor -->
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                <label for="bookAuthor" class="form-label">Autor</label>
+                <input type="text" class="form-control" id="bookAuthor" placeholder="Ex: João da Silva">
+            </div>
+    
+            <!-- Gênero -->
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                <label for="bookGenre" class="form-label">Gênero</label>
+                <select id="bookGenre" class="form-select">
+                    <option selected>Escolher...</option>
+                    <option>Fantasia</option>
+                    <option>Aventura</option>
+                    <option>Romance</option>
+                    <option>História</option>
+                    <option>Mistério</option>
+                    <option>Outro</option>
+                </select>
+            </div>
+            
+            <!-- Avaliação do Usuário -->
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                <label for="userRating" class="form-label">Avaliação do Usuário</label>
+                <select id="userRating" class="form-select">
+                    <option selected>Escolher...</option>
+                    <option>1 - Péssimo</option>
+                    <option>2 - Ruim</option>
+                    <option>3 - Regular</option>
+                    <option>4 - Bom</option>
+                    <option>5 - Excelente</option>
+                </select>
+            </div>
+            
+            <!-- Estado -->
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                <label for="userState" class="form-label">Estado</label>
+                <select id="userState" class="form-select">
+                    <option selected>Escolher...</option>
+                    <option>AC</option>
+                    <option>AL</option>
+                    <option>AM</option>
+                    <option>AP</option>
+                    <option>BA</option>
+                    <option>CE</option>
+                    <option>DF</option>
+                    <option>ES</option>
+                    <option>GO</option>
+                    <option>MA</option>
+                    <option>MG</option>
+                    <option>MS</option>
+                    <option>MT</option>
+                    <option>PA</option>
+                    <option>PB</option>
+                    <option>PE</option>
+                    <option>PI</option>
+                    <option>PR</option>
+                    <option>RJ</option>
+                    <option>RN</option>
+                    <option>RO</option>
+                    <option>RR</option>
+                    <option>RS</option>
+                    <option>SC</option>
+                    <option>SE</option>
+                    <option>SP</option>
+                    <option>TO</option>
+                </select>
+            </div>
+    
+            <!-- Endereço -->
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                <label for="userAddress" class="form-label">Endereço</label>
+                <input type="text" class="form-control" id="userAddress" placeholder="Rua, número, complemento">
+            </div>
+    
+            <!-- Condição do Livro -->
+            <div class="col-12">
+                <label for="bookCondition" class="form-label">Condição do Livro</label>
+                <input type="text" class="form-control" id="bookCondition" placeholder="Ex: Novo, Usado, Em bom estado">
+            </div>
+    
+            <!-- Sinopse -->
+            <div class="col-12">
+                <label for="bookSynopsis" class="form-label">Sinopse</label>
+                <textarea class="form-control" id="bookSynopsis" rows="3" placeholder="Escreva uma breve sinopse do livro"></textarea>
+            </div>
+    
+            <!-- Descrição/Observações -->
+            <div class="col-12">
+                <label for="bookDescription" class="form-label">Descrição/Observações</label>
+                <textarea class="form-control" id="bookDescription" rows="3" placeholder="Detalhes adicionais sobre o livro, edições especiais, etc."></textarea>
+            </div>
+    
+            <!-- Botão de envio -->
+            <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary">Cadastrar Livro para Troca</button>
+            </div>
+        </form>
+    </main>
+    
+
+    <footer class="footer text-center text-sm-start py-4">
+        <div class="container">
+            <h5 class="mb-3"><strong>Canto dos Raros</strong></h5>
+            <p>Telefone: (11) 9999-8888</p>
+            <p>Endereço: Rua dos Livros, 123 - São Paulo, SP</p>
+            
+            <div class="social-icons mt-3 d-flex justify-content-center flex-wrap">
+                <a href="#" class="mx-2"><i>Facebook:</i> Canto_dos_raros</a>
+                <a href="#" class="mx-2"><i>Instagram:</i> CantodosRarosOficial</a>
+                <a href="#" class="mx-2"><i>X:</i> Canto_dos_Raros</a>
+            </div>
+        </div>
+    </footer>
+    
+
+
+
+      
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> <!--Link importado da web para direcionar o JS do bootstrap-->
+
+</body>
+</html>
